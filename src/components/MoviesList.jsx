@@ -8,7 +8,7 @@ export default function MoviesList({ moviesList }) {
           <div className="col" key={currentCard.id}>
             <Link to={`/movies/${currentCard.id}`} className="card h-100 link">
               <img
-                src={"http://localhost:3000" + currentCard.image}
+                src={currentCard.image}
                 className="card-img-top"
                 alt={currentCard.title}
               />
