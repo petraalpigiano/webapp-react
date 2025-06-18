@@ -18,7 +18,7 @@ export default function MovieDetailsPage() {
       <div className="container">
         <Card movieDetail={movieDetail} />
         {/* è una call diversa non sto prendendo i dettagli del post ma tutte le review di quel post specifico */}
-        <ReviewsList movieDetail={movieDetail} />
+        <ReviewsList reviews={movieDetail.review} />
       </div>
     </>
   );
