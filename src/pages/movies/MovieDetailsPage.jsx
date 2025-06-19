@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Card from "../../components/Card";
 import ReviewsList from "../../components/ReviewsList";
+import Form from "../../components/Form";
 
 export default function MovieDetailsPage() {
   const { id } = useParams();
@@ -17,8 +18,8 @@ export default function MovieDetailsPage() {
     <>
       <div className="container">
         <Card movieDetail={movieDetail} />
-        {/* è una call diversa non sto prendendo i dettagli del post ma tutte le review di quel post specifico */}
         <ReviewsList reviews={movieDetail.review} />
+        <Form id={id} />
       </div>
     </>
   );

@@ -4,8 +4,6 @@ import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import Rating from "./Rating";
 
 export default function ReviewsList({ reviews }) {
-  console.log(reviews);
-
   return (
     <>
       <table className="table table-hover">
