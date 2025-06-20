@@ -4,3 +4,8 @@
 .movie-card {
   width: 10rem;
 }
+.spinner-container {
+  inset: 0;
+  background-color: rgba(213, 212, 212, 0.479);
+  backdrop-filter: blur(3px);
+}
